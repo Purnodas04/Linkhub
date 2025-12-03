@@ -26,7 +26,46 @@ nav a:hover { text-decoration: underline; color: #50c9c3; }
 .search-wrap input#searchInput { width: 100%; padding-right: 48px; box-sizing: border-box; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; }
 .search-btn { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: transparent; border: none; font-size: 18px; cursor: pointer; }
 
-/* Options Menu */
-.options-menu { position: absolute; right: 16px; top: 40px; background: #fff; border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 100; width: 150px; }
-.options-menu.hidden { display: none; }
-.options-menu ul { list-style: none;
+.options-menu {
+  position: absolute;
+  right: 16px;
+  top: 40px; /* Delete aur More button ke neeche */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  width: 150px;
+}
+
+.options-menu.hidden {
+  display: none;
+}
+
+.options-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options-menu li {
+  border-bottom: 1px solid #eee;
+}
+
+.options-menu li:last-child {
+  border-bottom: none;
+}
+
+.options-menu button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.options-menu button:hover {
+  background: #f4f4f4;
+}
