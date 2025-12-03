@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linkhub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Store data in a specific way </h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</details></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Linkhub</h2>
+    <p>this is where you can save all your contact details and no need to worry of losing data.
+
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Contact Details</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Search Name</h3>
+        <div class="search-wrap">
+          <input type="text" id="searchInput" placeholder="Search names...">
+          <button id="searchBtn" class="search-btn" type="button" aria-label="Search">🔍</button>
+        </div>
+        <ul id="namesList">
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+  <section id="details">
+    <h2>Fill Details</h2>
+    <div class="details-grid">
+      <div class="details-form">
+          <div class="details-box">
+          <div class="details-box-header">
+            <button id="prevEntry" class="prev-btn" type="button">← Previous</button>
+            <button id="clearForm" class="clear-all" type="button">Clear All</button>
+            <button id="nextEntry" class="next-btn" type="button">Next</button>
+          </div>
+          <div class="details-row">
+            <label>Name:</label>
+              <div class="field-with-clear">
+                <input type="text" placeholder="Enter your name">
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <label>Email:</label>
+              <div class="field-with-clear">
+                <input type="email" placeholder="Enter your email">
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <label>Phone:</label>
+              <div class="field-with-clear">
+                <input type="text" placeholder="Enter your phone">
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <label>Facebook ID:</label>
+              <div class="field-with-clear">
+                <input type="text" placeholder="Enter Facebook username or URL">
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <label>Instagram ID:</label>
+              <div class="field-with-clear">
+                <input type="text" placeholder="Enter Instagram username or URL">
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <label>Snapchat ID:</label>
+              <div class="field-with-clear">
+                <input type="text" placeholder="Enter Snapchat username">
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <label>Payment Details:</label>
+              <div class="field-with-clear">
+                <textarea placeholder="Add payment info (e.g., PayPal, phone number)"></textarea>
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <label>Address:</label>
+              <div class="field-with-clear">
+                <textarea placeholder="Enter your address"></textarea>
+                <button class="clear-field" type="button" aria-label="Clear field">×</button>
+              </div>
+          </div>
+          <div class="details-row">
+            <button id="saveDetails" type="button">Save Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts-box">
+        <h3>All Contacts <button id="deleteSelected" class="delete-selected" type="button">Delete</button>
+        <button id="moreOptions" class="more-btn" type="button">⋯</button></h3>
+        <ul id="contactsList">
+          <li class="empty">No contacts yet. Save a detail to add here.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>forget someone's email id?, social media id? or Address? Don't worry, open Linkhub and get all the details you need.
+
+    </p>
+  </section>
+
+  <!-- Search Modal -->
+  <div id="searchModal" class="modal hidden">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close" aria-label="Close">✕</button>
+      <h3>Search Results</h3>
+      <div id="modalResults">No results</div>
+    </div>
+  </div>
+
+  <!-- Contact Section removed -->
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Give your feedback on my emial - purnodas1430@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
